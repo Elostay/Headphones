@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Headphones/static/css/main.07846c73.css",
-    "main.js": "/Headphones/static/js/main.854a58f3.js",
+    "main.js": "/Headphones/static/js/main.300270c0.js",
     "index.html": "/Headphones/index.html",
     "main.07846c73.css.map": "/Headphones/static/css/main.07846c73.css.map",
-    "main.854a58f3.js.map": "/Headphones/static/js/main.854a58f3.js.map"
+    "main.300270c0.js.map": "/Headphones/static/js/main.300270c0.js.map"
   },
   "entrypoints": [
     "static/css/main.07846c73.css",
-    "static/js/main.854a58f3.js"
+    "static/js/main.300270c0.js"
   ]
 }
