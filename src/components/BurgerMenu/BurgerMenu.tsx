@@ -13,10 +13,10 @@ const BurgerMenu = ({ isOpen }: BurgerMenuProps) => {
       <div className="py-9 px-5 text-white">
         <img src={Logo} alt="Bose logo" className=" mb-14 w-[100px] h-3" />
         <div className="flex flex-col gap-6">
-          <a href="">Characteristics</a>
-          <a href="">History</a>
-          <a href="">Reviews</a>
-          <a href="">Payment and delivery</a>
+          {/* <a href="#">Characteristics</a> */}
+          {/* <a href="#">History</a> */}
+          {/* <a href="#">Reviews</a> */}
+          {/* <a href="#">Payment and delivery</a> */}
         </div>
       </div>
     </div>
