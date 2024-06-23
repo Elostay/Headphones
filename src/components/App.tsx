@@ -3,7 +3,7 @@ import Hero from "components/Hero/Hero";
 
 function App() {
   return (
-    <div className="App">
+    <div className="py-9 px-5">
       <Header />
       <Hero />
     </div>
