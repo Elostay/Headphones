@@ -6,8 +6,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header>
-      <img src={Logo} alt="Bose logo" className=" mb-8 w-[100px] h-3" />
+    <header className="place-self-start">
+      <img src={Logo} alt="Bose logo" className=" float-left w-[100px] h-3" />
       <div className="relative">
         <button
           type="button"

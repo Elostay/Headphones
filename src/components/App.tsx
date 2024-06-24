@@ -3,7 +3,7 @@ import Hero from "components/Hero/Hero";
 
 function App() {
   return (
-    <div className="py-9 px-5">
+    <div className=" px-5 mx-auto max-w-screen-lg h-screen flex items-center justify-center flex-col">
       <Header />
       <Hero />
     </div>
