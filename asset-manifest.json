@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Headphones/static/css/main.c815041e.css",
-    "main.js": "/Headphones/static/js/main.d398dfd7.js",
+    "main.css": "/Headphones/static/css/main.1b28afd3.css",
+    "main.js": "/Headphones/static/js/main.f9c2bc01.js",
     "static/media/Roboto-Regular.ttf": "/Headphones/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/RobotoCondensed-Regular.ttf": "/Headphones/static/media/RobotoCondensed-Regular.72f32aff4124468d86a4.ttf",
     "static/media/Gilroy-Regular.ttf": "/Headphones/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Semibold.ttf": "/Headphones/static/media/Gilroy-Semibold.41fa36c3c8e966b35423.ttf",
     "static/media/hero_phones.jpg": "/Headphones/static/media/hero_phones.7c15d91d092b74460b3f.jpg",
     "index.html": "/Headphones/index.html",
-    "main.c815041e.css.map": "/Headphones/static/css/main.c815041e.css.map",
-    "main.d398dfd7.js.map": "/Headphones/static/js/main.d398dfd7.js.map"
+    "main.1b28afd3.css.map": "/Headphones/static/css/main.1b28afd3.css.map",
+    "main.f9c2bc01.js.map": "/Headphones/static/js/main.f9c2bc01.js.map"
   },
   "entrypoints": [
-    "static/css/main.c815041e.css",
-    "static/js/main.d398dfd7.js"
+    "static/css/main.1b28afd3.css",
+    "static/js/main.f9c2bc01.js"
   ]
 }
