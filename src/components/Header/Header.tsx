@@ -6,12 +6,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="place-self-start my-9 md:my-14">
+    <header className="relative my-9 md:my-[50px] flex justify-between w-full">
       <img src={Logo} alt="Bose logo" className=" float-left w-[100px] h-3" />
       <div className="">
         <button
           type="button"
-          className=" top-8 right-5 z-20 overflow-hidden"
+          className="fixed top-8 right-5 z-20 overflow-hidden md:top-12 md:right-[50px]"
           onClick={() => setIsMenuOpen((prev) => !prev)}
         >
           <div
