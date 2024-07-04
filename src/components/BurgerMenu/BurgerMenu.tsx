@@ -16,7 +16,7 @@ const BurgerMenu = ({ isOpen }: BurgerMenuProps) => {
       <div className="my-9 px-5 text-white md:px-[60px] md:mt-[50px] md:mb-[100px]">
         <img src={Logo} alt="Bose logo" className="mb-14 w-[100px] h-3" />
         <ul className="flex flex-col gap-6 md:text-base">
-          <li>
+          {/* <li>
             <a href="#" className="hover:border-b hover:border-white">
               Characteristics
             </a>
@@ -35,7 +35,7 @@ const BurgerMenu = ({ isOpen }: BurgerMenuProps) => {
             <a href="#" className="hover:border-b hover:border-white">
               Payment and delivery
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
