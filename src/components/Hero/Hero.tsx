@@ -1,6 +1,6 @@
-import HeadphonesMobile from "../../assets/images/hero_headphones-phone.jpg";
-import HeadphonesTablet from "../../assets/images/hero_headphones-tablet.jpg";
-import HeadphonesLaptop from "../../assets/images/hero_headphones-laptop.jpg";
+import HeadphonesMobile from "assets/images/hero_headphones/hero_headphones-phone.jpg";
+import HeadphonesTablet from "assets/images/hero_headphones/hero_headphones-tablet.jpg";
+import HeadphonesLaptop from "assets/images/hero_headphones/hero_headphones-laptop.jpg";
 interface HeroProps {
   windowWidth: number;
 }

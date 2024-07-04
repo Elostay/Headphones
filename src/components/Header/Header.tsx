@@ -14,7 +14,7 @@ const Header = ({ windowWidth }: HeaderProps) => {
       <img src={Logo} alt="Bose logo" className=" float-left w-[100px] h-3" />
       {windowWidth >= 1440 ? (
         <ul className="flex  gap-[77px] md:text-base">
-          <li>
+          {/* <li>
             <a href="#" className="hover:border-b hover:border-white">
               Characteristics
             </a>
@@ -33,7 +33,7 @@ const Header = ({ windowWidth }: HeaderProps) => {
             <a href="#" className="hover:border-b hover:border-white">
               Payment and delivery
             </a>
-          </li>
+          </li> */}
         </ul>
       ) : (
         <div className="">
