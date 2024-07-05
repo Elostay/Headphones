@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/Headphones/static/css/main.e4880d72.css",
-    "main.js": "/Headphones/static/js/main.50354b2b.js",
+    "main.css": "/Headphones/static/css/main.452f51c3.css",
+    "main.js": "/Headphones/static/js/main.36330172.js",
     "static/media/Roboto-Regular.ttf": "/Headphones/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/girl_headphonesl-phone.png": "/Headphones/static/media/girl_headphonesl-phone.6025aa6b10004bb78a42.png",
     "static/media/RobotoCondensed-Regular.ttf": "/Headphones/static/media/RobotoCondensed-Regular.72f32aff4124468d86a4.ttf",
+    "static/media/girl_cofee-phone.png": "/Headphones/static/media/girl_cofee-phone.5fafc78c8efc42857dff.png",
+    "static/media/sunset-phone.png": "/Headphones/static/media/sunset-phone.38ba76b306178b3aa771.png",
     "static/media/Gilroy-Regular.ttf": "/Headphones/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Semibold.ttf": "/Headphones/static/media/Gilroy-Semibold.41fa36c3c8e966b35423.ttf",
+    "static/media/man-phone.png": "/Headphones/static/media/man-phone.eabc86d277350d586246.png",
     "static/media/hero_headphones-laptop.jpg": "/Headphones/static/media/hero_headphones-laptop.b19c039b7a807249bf7b.jpg",
+    "static/media/men-phone.png": "/Headphones/static/media/men-phone.f178342fffde89b05226.png",
     "static/media/hero_headphones-tablet.jpg": "/Headphones/static/media/hero_headphones-tablet.e36361f7f082a1b3db38.jpg",
+    "static/media/headphones_white-phone.jpg": "/Headphones/static/media/headphones_white-phone.c5fc584466fd59411abc.jpg",
     "static/media/hero_headphones-phone.jpg": "/Headphones/static/media/hero_headphones-phone.7c15d91d092b74460b3f.jpg",
     "index.html": "/Headphones/index.html",
-    "main.e4880d72.css.map": "/Headphones/static/css/main.e4880d72.css.map",
-    "main.50354b2b.js.map": "/Headphones/static/js/main.50354b2b.js.map"
+    "main.452f51c3.css.map": "/Headphones/static/css/main.452f51c3.css.map",
+    "main.36330172.js.map": "/Headphones/static/js/main.36330172.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4880d72.css",
-    "static/js/main.50354b2b.js"
+    "static/css/main.452f51c3.css",
+    "static/js/main.36330172.js"
   ]
 }
