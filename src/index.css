@@ -111,3 +111,16 @@ h3 {
 	line-height: 125%;
 	color: #e7e7e7;
 }
+
+.list-item::before {
+	content: url(assets/icons/circle.png);
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right: 24px;
+}
+
+section {
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
