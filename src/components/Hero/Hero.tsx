@@ -16,7 +16,7 @@ const Hero = ({ windowWidth }: HeroProps) => {
   };
 
   return (
-    <section className="md:w-full md:relative pb-[26px]">
+    <section className="md:w-full md:relative pb-[26px] pt-0">
       <div>
         <div className="md:text-base mb-8 md:mb-[105px]">
           <p className="mb-4 w-[222px] md:w-[253px]">

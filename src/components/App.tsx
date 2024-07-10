@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import Description from "./Description";
+import Reviews from "./Reviews";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Header windowWidth={windowWidth} />
       <Hero windowWidth={windowWidth} />
       <Description />
+      <Reviews />
     </div>
   );
 }
