@@ -3,6 +3,10 @@ import Hero from "./Hero";
 import Description from "./Description";
 import Reviews from "./Reviews";
 import { useEffect, useState } from "react";
+import Faq from "./Faq";
+import Order from "./Order";
+import Feedback from "./Feedback";
+import Footer from "./Footer";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,6 +29,10 @@ function App() {
       <Hero windowWidth={windowWidth} />
       <Description />
       <Reviews />
+      <Faq />
+      <Order />
+      <Feedback />
+      <Footer />
     </div>
   );
 }

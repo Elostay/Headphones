@@ -50,6 +50,7 @@ const Reviews = () => {
 
   return (
     <section>
+      <h2 id="reviews">Reviews</h2>
       <Slider text={text} videoLink={videoLink} videoImage={videoImage} />
       <ul className="flex gap-5 text-xl text-[#df3d3a] opacity-20">
         <li>

@@ -9,7 +9,7 @@ import RedCircle from "assets/icons/circle.png";
 const Description = () => {
   return (
     <section>
-      <h2>Premium design and comfort</h2>
+      <h2 id="characteristics">Premium design and comfort</h2>
       <h3>11 levels of noise reduction</h3>
       <p className="mb-6">
         With the new Bose Noise Canceling Headphone 700, you can smoothly
@@ -73,7 +73,9 @@ const Description = () => {
       </p>
       <img src={WhiteHeadphones} alt="white headphones" />
       <div className="mt-[52px] relative">
-        <h2 className="max-w-[124px]">brand creation history</h2>
+        <h2 id="history" className="max-w-[124px]">
+          brand creation history
+        </h2>
         <svg
           className="absolute top-0 -right-5"
           width="110"
