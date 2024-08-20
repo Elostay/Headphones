@@ -1,5 +1,6 @@
 import BlackHeadphones from "assets/images/choose_black_headphones/choose_black_headphones-phone.jpg";
 import GrayHeadphones from "assets/images/choose_gray_headphones/choose_gray_headphones-phone.jpg";
+import CustomRadioButtons from "components/CustomRadioButtons";
 import RedArrow from "components/RedArrow";
 import { useState } from "react";
 
@@ -7,8 +8,7 @@ const Order = () => {
   const [color, setColor] = useState("black");
 
   const handleClick = (color: string) => {
-    if (color === "black") setColor("black");
-    setColor("gray");
+    color === "black" ? setColor("black") : setColor("gray");
   };
   return (
     <section>
@@ -30,57 +30,9 @@ const Order = () => {
             gray
           </label>
         </form> */}
-        <div className="py-8 border-b-2 border-[#303030]">
-          <button
-            onClick={() => handleClick("black")}
-            type="button"
-            className="mr-6"
-          >
-            <svg
-              width="44"
-              height="44"
-              viewBox="0 0 44 44"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="22" cy="22" r="22" fill="#1D1D1D" />
-              <circle
-                cx="22"
-                cy="22"
-                r="21.5"
-                stroke="white"
-                stroke-opacity="0.8"
-              />
-              <circle
-                cx="22"
-                cy="22"
-                r="15"
-                fill="black"
-                stroke="#DF3D3A"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
-          <button onClick={() => handleClick("gray")} type="button">
-            <svg
-              width="44"
-              height="44"
-              viewBox="0 0 44 44"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="22" cy="22" r="22" fill="white" fill-opacity="0.8" />
-              <circle
-                cx="22"
-                cy="22"
-                r="21.5"
-                stroke="white"
-                stroke-opacity="0.8"
-              />
-              <circle cx="22" cy="22" r="16" fill="white" fill-opacity="0.8" />
-            </svg>
-          </button>
-        </div>
+
+        <CustomRadioButtons handleClick={handleClick} />
+
         <ul>
           <li className="flex justify-between py-6 border-b-2 border-[#303030]">
             <p className="text-base">Availability in stores</p>

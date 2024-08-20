@@ -2,9 +2,10 @@ import Logo from "../../assets/images/logo.png";
 
 interface BurgerMenuProps {
   isOpen: boolean;
+  closeBurger: () => void;
 }
 
-const BurgerMenu = ({ isOpen }: BurgerMenuProps) => {
+const BurgerMenu = ({ isOpen, closeBurger }: BurgerMenuProps) => {
   return (
     <div
       className={`fixed top-0 right-0  w-full h-full  shadow-lg transform transition-transform duration-300  z-10 bg-[#191919] md:h-[385px] md:inset-x-0 ${
@@ -20,22 +21,35 @@ const BurgerMenu = ({ isOpen }: BurgerMenuProps) => {
             <a
               href="#characteristics"
               className="hover:border-b hover:border-white"
+              onClick={() => closeBurger()}
             >
               Characteristics
             </a>
           </li>
           <li>
-            <a href="#history" className="hover:border-b hover:border-white">
+            <a
+              href="#history"
+              className="hover:border-b hover:border-white"
+              onClick={() => closeBurger()}
+            >
               History
             </a>
           </li>
           <li>
-            <a href="#reviews" className="hover:border-b hover:border-white">
+            <a
+              href="#reviews"
+              className="hover:border-b hover:border-white"
+              onClick={() => closeBurger()}
+            >
               Reviews
             </a>
           </li>
           <li>
-            <a href="#payment" className="hover:border-b hover:border-white">
+            <a
+              href="#payment"
+              className="hover:border-b hover:border-white"
+              onClick={() => closeBurger()}
+            >
               Payment and delivery
             </a>
           </li>
