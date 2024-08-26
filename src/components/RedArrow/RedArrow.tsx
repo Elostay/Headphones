@@ -10,7 +10,7 @@ const RedArrow = () => {
       <path
         d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062"
         stroke="#DF3D3A"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );

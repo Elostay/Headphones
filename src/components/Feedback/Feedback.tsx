@@ -14,10 +14,10 @@ const Feedback = () => {
           placeholder="Send us a message"
           className=" resize-none"
         ></textarea>
-        <p>
+        <div>
           <input type="checkbox" />
           <p>I agree to the privacy policy</p>
-        </p>
+        </div>
         <button type="submit">SEND</button>
       </form>
     </div>
