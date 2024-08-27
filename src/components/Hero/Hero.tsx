@@ -1,8 +1,9 @@
 import HeadphonesMobile from "assets/images/hero_headphones/hero_headphones-phone.jpg";
 import HeadphonesTablet from "assets/images/hero_headphones/hero_headphones-tablet.jpg";
 import HeadphonesLaptop from "assets/images/hero_headphones/hero_headphones-laptop.jpg";
-import useModalToggle from "hooks/useModalToggle";
 import Modal from "components/Modal";
+import useModalToggle from "hooks/useModalToggle";
+
 interface HeroProps {
   windowWidth: number;
 }
