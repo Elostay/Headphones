@@ -4,8 +4,10 @@ const Feedback = () => {
   return (
     <div>
       <img src={WomanWork} alt="Woman work in headphones" />
-      <h2>Feedback</h2>
-      <p>We'll help you find the right headphones for you.</p>
+      <h2 style={{ marginTop: "16px" }}>Feedback</h2>
+      <p className=" mb-10 text-base">
+        We'll help you find the right headphones for you.
+      </p>
       <form>
         <input type="text" placeholder="Your name" />
         <input type="email" placeholder="Your e-mail" />
@@ -16,9 +18,19 @@ const Feedback = () => {
         ></textarea>
         <div>
           <input type="checkbox" />
-          <p>I agree to the privacy policy</p>
+          <p>
+            I agree to the
+            <a href="#" className="underline ml-1">
+              privacy policy
+            </a>
+          </p>
         </div>
-        <button type="submit">SEND</button>
+        <button
+          type="submit"
+          className=" font-semibold text-base px-[120px] py-5 border border-[#DF3D3A]"
+        >
+          SEND
+        </button>
       </form>
     </div>
   );

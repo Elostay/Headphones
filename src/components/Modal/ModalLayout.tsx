@@ -24,7 +24,7 @@ const ModalLayout: FC<ModalLayoutProps> = ({
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="bg-white text-black max-w-xl w-full rounded-xl shadow-xl p-5"
+          className="bg-white text-black max-w-xl w-full rounded-xl shadow-xl p-5 text-2xl text-center font-bold"
         >
           {children}
         </div>

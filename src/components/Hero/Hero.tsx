@@ -47,7 +47,7 @@ const Hero = ({ windowWidth }: HeroProps) => {
           className="w-[280px] h-60 md:w-[380px] md:h-[440px] md:absolute md:top-0 md:-right-[64px] lg:w-[700px] lg:h-[598px]  lg:-right-[287px]"
         />
       </section>
-      <Modal {...modalProps} />
+      <Modal {...modalProps}>Will be avaliable soon!</Modal>
     </>
   );
 };
