@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        redBorder: "DF3D3A",
+      },
       fontFamily: {
         RobotoCondensed: ["Roboto Condensed", "sans-serif"],
       },

@@ -2,7 +2,7 @@ import WomanWork from "assets/images/woman_work/woman_work-phone.png";
 
 const Feedback = () => {
   return (
-    <div>
+    <section className="pb-[72px]">
       <img src={WomanWork} alt="Woman work in headphones" />
       <h2 style={{ marginTop: "16px" }}>Feedback</h2>
       <p className=" mb-10 text-base">
@@ -16,7 +16,7 @@ const Feedback = () => {
           placeholder="Send us a message"
           className=" resize-none"
         ></textarea>
-        <div>
+        <div className="mb-10">
           <input type="checkbox" />
           <p>
             I agree to the
@@ -27,12 +27,12 @@ const Feedback = () => {
         </div>
         <button
           type="submit"
-          className=" font-semibold text-base px-[120px] py-5 border border-[#DF3D3A]"
+          className=" font-semibold text-base px-[120px] py-5 border border-white "
         >
           SEND
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 
