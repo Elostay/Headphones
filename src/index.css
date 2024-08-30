@@ -71,18 +71,11 @@ img {
 
 button {
 	cursor: pointer;
-	border: none;
 	padding: 0;
 }
 
 input {
 	font-family: inherit;
-}
-
-fieldset {
-	padding: 0;
-	margin: 0;
-	border: none;
 }
 
 body {
@@ -125,4 +118,40 @@ h3 {
 section {
 	padding-top: 26px;
 	padding-bottom: 26px;
+}
+
+/*--------------------------------------*/
+
+.custom-checkbox input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+	position: relative;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #ffffffcc;
+	display: inline-block;
+	vertical-align: middle;
+	transition: background-color 0.2s ease;
+	background-color: #191919;
+}
+
+.custom-checkbox .checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+	left: 2px;
+	bottom: -1px;
+	width: 18px;
+	height: 22px;
+	background-image: url('data:image/svg+xml;utf8,<svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 13L9.19156 20.1916C9.61949 20.6195 10.3265 20.5722 10.6936 20.0911L24.5 2" stroke="%23DF3D3A" stroke-width="3" stroke-linecap="round" /></svg>');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+	display: block;
 }
