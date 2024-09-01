@@ -1,39 +1,33 @@
-import { useState } from "react";
-
 import { BounceLoader } from "react-spinners";
 
 interface SliderProps {
   text: string;
   videoLink: string;
   videoImage: string;
-  // activeBtn:
+  isVideoVisible: boolean;
+  handlePlayClick: () => void;
+  isLoading: boolean;
+  handleVideoLoad: () => void;
 }
-const Slider = ({ text, videoLink, videoImage }: SliderProps) => {
-  const [videoSrc, setVideoSrc] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
-  const handlePlayVideo = () => {
-    setIsLoading(true);
-    setVideoSrc(videoLink);
-  };
-
-  const handleVideoLoad = () => {
-    setIsLoading(false);
-  };
+const Slider = ({
+  text,
+  videoLink,
+  videoImage,
+  isVideoVisible,
+  handlePlayClick,
+  isLoading,
+  handleVideoLoad,
+}: SliderProps) => {
   return (
     <div>
       <div className="relative">
-        {!isLoading && !videoSrc && (
+        {isLoading && (
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <BounceLoader color="#b61010" />
+          </div>
+        )}
+
+        {!isVideoVisible ? (
           <div>
             <img
               src={videoImage}
@@ -44,7 +38,7 @@ const Slider = ({ text, videoLink, videoImage }: SliderProps) => {
             <button
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12"
               type="button"
-              onClick={handlePlayVideo}
+              onClick={() => handlePlayClick()}
             >
               <svg
                 width="50"
@@ -62,17 +56,11 @@ const Slider = ({ text, videoLink, videoImage }: SliderProps) => {
               </svg>
             </button>
           </div>
-        )}
-        {isLoading && (
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <BounceLoader color="#b61010" />
-          </div>
-        )}
-        {videoSrc && (
+        ) : (
           <iframe
             width="280"
             height="180"
-            src={videoSrc}
+            src={videoLink}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -83,7 +71,7 @@ const Slider = ({ text, videoLink, videoImage }: SliderProps) => {
         )}
       </div>
       <p className="font-semibold text-xl text-[#df3d3a] mt-8 mb-4">
-        Bose Сorporation
+        Bose Corporation
       </p>
       <p className="mb-8">{text}</p>
     </div>
