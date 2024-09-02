@@ -23,17 +23,6 @@ const Order = () => {
           <img src={GrayHeadphones} alt="gray headphones" />
         )}
 
-        {/* <form>
-          <label>
-            <input type="radio" name="color" value="black" checked />
-            black
-          </label>
-          <label>
-            <input type="radio" name="color" value="gray" />
-            gray
-          </label>
-        </form> */}
-
         <CustomRadioButtons handleClick={handleClick} />
 
         <ul>

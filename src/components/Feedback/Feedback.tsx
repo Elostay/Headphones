@@ -26,7 +26,7 @@ const Feedback = () => {
     const checkedCheckbox = agreeCheckbox.checked;
 
     if (!checkedCheckbox || !name || !email || !message) {
-      alert("Fill all fields");
+      setFilledForm(false);
     }
 
     if (checkedCheckbox && name && email && message) {
@@ -67,7 +67,7 @@ const Feedback = () => {
           <label className="custom-checkbox">
             <input type="checkbox" name="policy" />
             <span className="checkmark mr-6"></span>I agree to the
-            <a href="#" className="underline ml-1">
+            <a href="https://www.google.com.ua/" className="underline ml-1">
               privacy policy
             </a>
           </label>
@@ -81,8 +81,10 @@ const Feedback = () => {
           SEND
         </button>
       </form>
-      {filledForm && (
+      {filledForm ? (
         <Modal {...modalProps}> {name}, thank you for your feedback!</Modal>
+      ) : (
+        <Modal {...modalProps}>Fill empty fields!</Modal>
       )}
     </section>
   );

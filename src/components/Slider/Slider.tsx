@@ -73,7 +73,7 @@ const Slider = ({
       <p className="font-semibold text-xl text-[#df3d3a] mt-8 mb-4">
         Bose Corporation
       </p>
-      <p className="mb-8">{text}</p>
+      <p className="mb-8 min-h-[147px]">{text}</p>
     </div>
   );
 };
