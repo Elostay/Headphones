@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className=" px-5 mx-auto max-w-screen-lg h-screen flex items-center flex-col md:px-16 lg:px-20">
+    <div className=" px-5 mx-auto max-w-screen-lg h-screen flex items-center flex-col md:px-[60px] xl:px-20 overflow-hidden">
       <Header windowWidth={windowWidth} />
       <Hero windowWidth={windowWidth} />
       <Description />

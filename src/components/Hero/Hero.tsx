@@ -22,7 +22,7 @@ const Hero = ({ windowWidth }: HeroProps) => {
 
   return (
     <>
-      <section className="md:w-full md:relative pb-[26px] pt-0">
+      <section className="md:w-full md:relative pb-[26px] pt-0 ">
         <div>
           <div className="md:text-base mb-8 md:mb-[105px]">
             <p className="mb-4 w-[222px] md:w-[253px]">
@@ -41,11 +41,13 @@ const Hero = ({ windowWidth }: HeroProps) => {
             Order
           </button>
         </div>
-        <img
-          src={getImageSrc()}
-          alt="black headphones"
-          className="w-[280px] h-60 md:w-[380px] md:h-[440px] md:absolute md:top-0 md:-right-[64px] lg:w-[700px] lg:h-[598px]  lg:-right-[287px]"
-        />
+        <div className=" md:absolute md:top-0 md:-right-[64px] xl:-right-[287px]">
+          <img
+            src={getImageSrc()}
+            alt="black headphones"
+            className="w-[280px] h-60 md:w-[380px] md:h-[440px] xl:w-[700px] xl:h-[598px] "
+          />
+        </div>
       </section>
       <Modal {...modalProps}>Will be avaliable soon!</Modal>
     </>
