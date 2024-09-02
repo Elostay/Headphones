@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Headphones/static/css/main.8cc758d0.css",
-    "main.js": "/Headphones/static/js/main.4eb6d265.js",
+    "main.css": "/Headphones/static/css/main.7ac3d0f0.css",
+    "main.js": "/Headphones/static/js/main.54a7e7d0.js",
     "static/media/Roboto-Regular.ttf": "/Headphones/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/girl_headphonesl-phone.png": "/Headphones/static/media/girl_headphonesl-phone.6025aa6b10004bb78a42.png",
     "static/media/RobotoCondensed-Regular.ttf": "/Headphones/static/media/RobotoCondensed-Regular.72f32aff4124468d86a4.ttf",
@@ -22,11 +22,11 @@
     "static/media/choose_black_headphones-phone.jpg": "/Headphones/static/media/choose_black_headphones-phone.a4d39c8e1cfc17f55922.jpg",
     "static/media/choose_gray_headphones-phone.jpg": "/Headphones/static/media/choose_gray_headphones-phone.492e54de32075615cca0.jpg",
     "index.html": "/Headphones/index.html",
-    "main.8cc758d0.css.map": "/Headphones/static/css/main.8cc758d0.css.map",
-    "main.4eb6d265.js.map": "/Headphones/static/js/main.4eb6d265.js.map"
+    "main.7ac3d0f0.css.map": "/Headphones/static/css/main.7ac3d0f0.css.map",
+    "main.54a7e7d0.js.map": "/Headphones/static/js/main.54a7e7d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cc758d0.css",
-    "static/js/main.4eb6d265.js"
+    "static/css/main.7ac3d0f0.css",
+    "static/js/main.54a7e7d0.js"
   ]
 }
