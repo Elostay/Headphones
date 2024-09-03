@@ -1,13 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import BurgerMenu from "components/BurgerMenu";
 
-interface HeaderProps {
-  windowWidth: number;
-}
-
-const Header = ({ windowWidth }: HeaderProps) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const closeBurger = () => {
     setIsMenuOpen((prev) => !prev);
@@ -15,8 +24,8 @@ const Header = ({ windowWidth }: HeaderProps) => {
   return (
     <header className="relative my-9 md:my-[50px] flex justify-between w-full items-center lg:my-[66px] ">
       <img src={Logo} alt="Bose logo" className=" float-left w-[100px] h-3" />
-      {windowWidth >= 1440 ? (
-        <ul className="flex  gap-[77px] md:text-base">
+      {windowWidth >= 1280 ? (
+        <ul className="flex  gap-[77px] md:text-base absolute -right-[250px]">
           <li>
             <a
               href="#characteristics"

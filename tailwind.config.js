@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      lineHeight: {
+        100: "100%",
+      },
       colors: {
         redBorder: "DF3D3A",
       },

@@ -4,21 +4,8 @@ import HeadphonesLaptop from "assets/images/hero_headphones/hero_headphones-lapt
 import Modal from "components/Modal";
 import useModalToggle from "hooks/useModalToggle";
 
-interface HeroProps {
-  windowWidth: number;
-}
-const Hero = ({ windowWidth }: HeroProps) => {
+const Hero = () => {
   const modalProps = useModalToggle();
-
-  const getImageSrc = () => {
-    if (windowWidth < 768) {
-      return HeadphonesMobile;
-    }
-    if (windowWidth < 1440) {
-      return HeadphonesTablet;
-    }
-    return HeadphonesLaptop;
-  };
 
   return (
     <>
@@ -30,7 +17,7 @@ const Hero = ({ windowWidth }: HeroProps) => {
             </p>
             <p className="w-[93px] md:w-[110px]">Up to 20 hours of playback</p>
           </div>
-          <h1 className=" text-[34px] font-semibold text-[#E7E7E7] uppercase  tracking-wide mb-8 md:text-[42px] w-[234px] md:w-[289px] md:mb-10">
+          <h1 className=" text-[34px] font-semibold text-[#E7E7E7] uppercase  tracking-wide mb-8 md:text-[42px] w-[234px] md:w-[289px] md:mb-10 xl:text-[74px] xl:leading-100 xl:w-[646px] xl:mb-[86px]">
             Headphones Bose NC 700
           </h1>
           <button
@@ -42,11 +29,15 @@ const Hero = ({ windowWidth }: HeroProps) => {
           </button>
         </div>
         <div className=" md:absolute md:top-0 md:-right-[64px] xl:-right-[287px]">
-          <img
-            src={getImageSrc()}
-            alt="black headphones"
-            className="w-[280px] h-60 md:w-[380px] md:h-[440px] xl:w-[700px] xl:h-[598px] "
-          />
+          <picture>
+            <source srcSet={HeadphonesTablet} media="(min-width: 768px)" />
+            <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" />
+            <img
+              src={HeadphonesMobile}
+              alt="black headphones"
+              className="w-[280px] h-60 md:w-[380px] md:h-[440px] xl:w-[500px] xl:h-[510px]  "
+            />
+          </picture>
         </div>
       </section>
       <Modal {...modalProps}>Will be avaliable soon!</Modal>

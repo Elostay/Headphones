@@ -1,4 +1,6 @@
-import GirlHeadphones from "assets/images/girl_headphones/girl_headphonesl-phone.png";
+import GirlHeadphonesMobile from "assets/images/girl_headphones/girl_headphonesl-phone.png";
+import GirlHeadphonesTablet from "assets/images/girl_headphones/girl_headphonesl-tablet.png";
+import GirlHeadphonesLaptop from "assets/images/girl_headphones/girl_headphonesl-laptop.png";
 import Sunset from "assets/images/sunset/sunset-phone.png";
 import WhiteHeadphones from "assets/images/headphones_white/headphones_white-phone.jpg";
 import Men from "assets/images/men/men-phone.png";
@@ -9,21 +11,35 @@ import RedCircle from "assets/icons/circle.png";
 const Description = () => {
   return (
     <section>
-      <h2 id="characteristics">Premium design and comfort</h2>
-      <h3>11 levels of noise reduction</h3>
-      <p className="mb-6">
-        With the new Bose Noise Canceling Headphone 700, you can smoothly
-        increase or decrease the level of noise cancellation. You can be heard
-        perfectly and you hear the interlocutor clearly, even in a noisy
-        environment!
-      </p>
-      <h3>Comfort up to max level</h3>
-      <p className="mb-8">
-        Stylish, lightweight stainless steel headband with soft, angled cups of
-        headphones for comfortable seating. The inner side is made of soft gel
-        lining that fits well to the head.
-      </p>
-      <img src={GirlHeadphones} alt="girl in headphones" />
+      <div className="md:flex md:justify-between">
+        <div className=" md:order-1 md:w-[294px] lg:w-[464px] ">
+          <h2 id="characteristics" className=" md:w-[294px] lg:w-[464px]">
+            Premium design and comfort
+          </h2>
+          <h3>11 levels of noise reduction</h3>
+          <p className="mb-6">
+            With the new Bose Noise Canceling Headphone 700, you can smoothly
+            increase or decrease the level of noise cancellation. You can be
+            heard perfectly and you hear the interlocutor clearly, even in a
+            noisy environment!
+          </p>
+          <h3>Comfort up to max level</h3>
+          <p className="mb-8">
+            Stylish, lightweight stainless steel headband with soft, angled cups
+            of headphones for comfortable seating. The inner side is made of
+            soft gel lining that fits well to the head.
+          </p>
+        </div>
+        <picture className="md:mr-[60px] lg:mr-[150px] shrink-0">
+          <source srcSet={GirlHeadphonesTablet} media="(min-width: 768px)" />
+          <source srcSet={GirlHeadphonesLaptop} media="(min-width: 1280px)" />
+          <img
+            src={GirlHeadphonesMobile}
+            alt="girl in headphones"
+            className="m-auto md:h-[540px]"
+          />
+        </picture>
+      </div>
       <h2>capable of so much</h2>
       <ul className="flex flex-col gap-4">
         <li className="list-item">Ability to receive calls</li>
@@ -37,7 +53,7 @@ const Description = () => {
         </li>
       </ul>
       <h2>The luxury of silence</h2>
-      <img src={Sunset} alt="headphones and sunset" className="mb-8" />
+      <img src={Sunset} alt="headphones and sunset" className="mb-8 m-auto" />
       <h3>Maximum enjoyment</h3>
       <p className="mb-[42px]">
         In order to create a comfortable atmosphere - raise the level by level
@@ -57,7 +73,7 @@ const Description = () => {
         you new facets of sound. It allows you to stay connected to the real
         world and immerse yourself in the virtual universe at the same time.
       </p>
-      <img src={GirlWithCofee} alt="girl with cofee" />
+      <img src={GirlWithCofee} alt="girl with cofee" className="m-auto" />
       <h2>Guarantees</h2>
       <img src={RedCircle} className="mb-6" alt="red circle decor" />
       <h3>90 Day Money Back Guarantee</h3>
@@ -71,7 +87,7 @@ const Description = () => {
         Regardless of your country of residence, if your headphones are broken,
         we will send you new ones.
       </p>
-      <img src={WhiteHeadphones} alt="white headphones" />
+      <img src={WhiteHeadphones} alt="white headphones" className="m-auto" />
       <div className="mt-[52px] relative">
         <h2 id="history" className="max-w-[124px]">
           brand creation history
@@ -99,7 +115,7 @@ const Description = () => {
         time for his home. After a few minutes of listening to the audio
         recording, his bewilderment turned to disappointment.
       </p>
-      <img src={Men} alt="Men work" className="mb-8" />
+      <img src={Men} alt="Men work" className="mb-8 m-auto" />
       <p className="mb-8">
         From Amar's point of view, the sound was so flat and unnatural that it
         was better not to listen to the music at all than to listen to it in
@@ -110,7 +126,7 @@ const Description = () => {
         equipments that would reproduce sound with impeccable accuracy and
         naturalness
       </p>
-      <img src={Man} alt="creator" className="mb-8" />
+      <img src={Man} alt="creator" className="mb-8 m-auto" />
       <svg
         className="mb-6"
         width="34"
