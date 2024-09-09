@@ -22,10 +22,14 @@ const Header = () => {
     setIsMenuOpen((prev) => !prev);
   };
   return (
-    <header className="relative my-9 md:my-[50px] flex justify-between w-full items-center lg:my-[66px] ">
-      <img src={Logo} alt="Bose logo" className=" float-left w-[100px] h-3" />
-      {windowWidth >= 1280 ? (
-        <ul className="flex  gap-[77px] md:text-base absolute -right-[250px]">
+    <header className="relative my-9 md:my-[50px] flex justify-between w-full items-center lg:my-[66px] xl:my-[74px]">
+      <img
+        src={Logo}
+        alt="Bose logo"
+        className=" float-left w-[100px] h-3 xl:absolute xl:-left-[200px]"
+      />
+      {windowWidth >= 1440 ? (
+        <ul className="flex  gap-[77px] md:text-base absolute -right-[250px] xl:-right-[200px]">
           <li>
             <a
               href="#characteristics"

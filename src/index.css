@@ -125,6 +125,10 @@ h3 {
 section {
 	padding-top: 26px;
 	padding-bottom: 26px;
+	@media (min-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }
 
 /*--------------------------------------*/

@@ -11,7 +11,7 @@ const Hero = () => {
     <>
       <section className="md:w-full md:relative pb-[26px] pt-0 ">
         <div>
-          <div className="md:text-base mb-8 md:mb-[105px]">
+          <div className="md:text-base mb-8 md:mb-[105px] xl:relative xl:-left-[200px]">
             <p className="mb-4 w-[222px] md:w-[253px]">
               Noise cancellation headphones that are capable for a lot of things
             </p>
