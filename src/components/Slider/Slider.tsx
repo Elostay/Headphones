@@ -19,7 +19,7 @@ const Slider = ({
   handleVideoLoad,
 }: SliderProps) => {
   return (
-    <div>
+    <div className="">
       <div className="relative">
         {isLoading && (
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -28,7 +28,7 @@ const Slider = ({
         )}
 
         {!isVideoVisible ? (
-          <div>
+          <div className="w-[280px] m-auto">
             <img
               src={videoImage}
               alt="girl with bose"
@@ -64,7 +64,7 @@ const Slider = ({
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className=" w-[280px] h-[180px]"
+            className=" w-[280px] h-[180px] m-auto"
             title="Bose video"
             onLoad={handleVideoLoad}
           ></iframe>

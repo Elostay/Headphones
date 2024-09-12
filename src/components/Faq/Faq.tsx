@@ -35,7 +35,7 @@ const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section>
+    <section className="max-w-[280px]">
       <h2 id="faq">FAQ</h2>
       <ul>
         {items.map(({ number, text, answer }, index) => (

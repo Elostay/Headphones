@@ -59,7 +59,7 @@ const Reviews = () => {
   };
 
   return (
-    <section>
+    <section className="w-full">
       <h2 id="reviews">Reviews</h2>
 
       <Slider
@@ -72,7 +72,7 @@ const Reviews = () => {
         handleVideoLoad={handleVideoLoad}
       />
 
-      <ul className="flex items-center gap-5 text-xl ">
+      <ul className="flex items-center gap-5 text-xl justify-center">
         {numberBtn.map((btn, idx) => (
           <li key={btn}>
             <button

@@ -38,7 +38,11 @@ const Feedback = () => {
 
   return (
     <section className="pb-[72px]">
-      <img src={WomanWork} alt="Woman work in headphones" />
+      <img
+        className="xs:m-auto"
+        src={WomanWork}
+        alt="Woman work in headphones"
+      />
       <h2 style={{ marginTop: "16px" }}>Feedback</h2>
       <p className=" mb-10 text-base">
         We'll help you find the right headphones for you.

@@ -3,22 +3,26 @@ import GirlHeadphonesTablet from "assets/images/girl_headphones/girl_headphonesl
 import GirlHeadphonesLaptop from "assets/images/girl_headphones/girl_headphonesl-laptop.png";
 import SunsetPhone from "assets/images/sunset/sunset-phone.png";
 import SunsetTablet from "assets/images/sunset/sunset-tablet.png";
+import SunsetLaptop from "assets/images/sunset/sunset-laptop.png";
 import WhiteHeadphonesPhone from "assets/images/headphones_white/headphones_white-phone.jpg";
 import WhiteHeadphonesTablet from "assets/images/headphones_white/headphones_white-tablet.png";
+import WhiteHeadphonesLaptop from "assets/images/headphones_white/headphones_white-laptop.png";
 import MenPhone from "assets/images/men/men-phone.png";
 import MenTablet from "assets/images/men/men-tablet.png";
 import ManPhone from "assets/images/man/man-phone.png";
 import ManTablet from "assets/images/man/man-tablet.png";
 import GirlWithCofeeMobile from "assets/images/girl_cofee/girl_cofee-phone.png";
 import GirlWithCofeeTablet from "assets/images/girl_cofee/girl_cofee-tablet.png";
+import GirlWithCofeeLaptop from "assets/images/girl_cofee/girl_cofee-laptop.png";
 import RedCircle from "assets/icons/circle.png";
+import LongWave from "assets/icons/longWave.png";
 
 const Description = () => {
   return (
     <section>
-      <div className="md:flex md:justify-between">
-        <div className=" md:order-1 md:w-[294px] lg:w-[464px] ">
-          <h2 id="characteristics" className=" md:w-[294px] lg:w-[464px]">
+      <div className="md:flex md:justify-between xl:relative">
+        <div className=" md:order-1 md:w-[294px] lg:w-[464px] xl:ml-[800px] ">
+          <h2 id="characteristics" className=" md:w-[294px] lg:w-[464px] m-0">
             Premium design and comfort
           </h2>
           <h3>11 levels of noise reduction</h3>
@@ -35,34 +39,40 @@ const Description = () => {
             soft gel lining that fits well to the head.
           </p>
         </div>
-        <picture className="md:mr-[60px] lg:mr-[150px] shrink-0 xl:w-[590px] xl:h-[616px]">
+        <picture className="md:mr-[60px] lg:mr-[150px] shrink-0  xl:absolute top-0 -left-[100px] xl:mr-0 ">
           <source srcSet={GirlHeadphonesLaptop} media="(min-width: 1280px)" />
           <source srcSet={GirlHeadphonesTablet} media="(min-width: 768px)" />
 
           <img
             src={GirlHeadphonesMobile}
             alt="girl in headphones"
-            className="m-auto md:h-[540px]"
+            className="m-auto md:h-[540px] xl:m-0 xl:w-[590px] xl:h-[616px]"
           />
         </picture>
       </div>
       <h2>capable of so much</h2>
-      <ul className="flex flex-col gap-4">
-        <li className="list-item">Ability to receive calls</li>
-        <li className="list-item">Rich and powerful sound</li>
-        <li className="list-item">Active noise cancellation option</li>
-        <li className="list-item">Unsurpassed microphone system</li>
-        <li className="list-item">Support of voice assistants</li>
-        <li className="relative ">
-          <span className="absolute top-0 left-0 w-3 h-3 bg-[#DF3D3A] rounded-full"></span>
-          <p className="ml-9">Bose AR Augmented Reality Audio Platform</p>
+
+      <ul className="flex flex-col gap-4 xl:flex-row xl:gap-12">
+        <li className="flex flex-col gap-4 xl:w-1/2">
+          <span className="list-item">Ability to receive calls</span>
+          <span className="list-item">Rich and powerful sound</span>
+          <span className="list-item">Active noise cancellation option</span>
+        </li>
+        <li className="flex flex-col gap-4 xl:w-1/2">
+          <span className="list-item">Unsurpassed microphone system</span>
+          <span className="list-item">Support of voice assistants</span>
+          <div className="relative">
+            <span className="absolute top-0 left-0 w-3 h-3 bg-[#DF3D3A] rounded-full"></span>
+            <p className="ml-9">Bose AR Augmented Reality Audio Platform</p>
+          </div>
         </li>
       </ul>
+
       <h2 className="md:text-right">The luxury of silence</h2>
       <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen max-w-none">
-        <picture className="block w-full">
+        <picture className="block w-full xl:w-[1440px] xl:h-[524px]">
           <source srcSet={SunsetTablet} media="(min-width: 768px)" />
-          {/* <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" /> */}
+          <source srcSet={SunsetLaptop} media="(min-width: 1280px)" />
           <img
             src={SunsetPhone}
             alt="headphones and sunset"
@@ -71,8 +81,8 @@ const Description = () => {
         </picture>
       </div>
 
-      <div className="md:flex justify-between">
-        <div className="md:max-w-[294px]">
+      <div className="md:flex justify-between xl:mt-[60px]">
+        <div className="md:max-w-[294px] xl:max-w-[510px]">
           <h3>Maximum enjoyment</h3>
           <p className="mb-[42px]">
             In order to create a comfortable atmosphere - raise the level by
@@ -81,7 +91,7 @@ const Description = () => {
             button.
           </p>
         </div>
-        <div className="md:max-w-[294px]">
+        <div className="md:max-w-[294px] xl:max-w-[510px]">
           <h3>Crystal sound</h3>
           <p>
             The speaker system and brand name active equalizer are able to
@@ -91,31 +101,31 @@ const Description = () => {
           </p>
         </div>
       </div>
-      <div className="mt-[52px] md:flex justify-between  md:h-[297px]">
-        <div className="shrink-0 md:max-w-[294px] md:mr-[60px]">
+      <div className="mt-[52px] md:flex justify-between  md:h-[297px] xl:mt-[170px] xl:h-auto">
+        <div className="shrink-0 md:max-w-[294px] md:mr-[60px] xl:max-w-[380px]">
           <h2>Bose AR</h2>
           <h3>Brand name technology</h3>
-          <p className="mb-8 md:max-w-[294px]">
+          <p className="mb-8 md:max-w-[294px] xl:max-w-[380px]">
             Bose AR is a unique audio platform augmented reality, that opens
             before you new facets of sound. It allows you to stay connected to
             the real world and immerse yourself in the virtual universe at the
             same time.
           </p>
         </div>
-        <div className="relative md:absolute md:right-0 lg:static">
-          <picture className="block md:w-[354px] lg:w-[294px] ">
+        <div className="relative md:absolute md:right-0 lg:static xl:absolute">
+          <picture className="block md:w-[354px] lg:w-[294px] xl:w-[700px] xl:h-[586px]">
             <source srcSet={GirlWithCofeeTablet} media="(min-width: 768px)" />
-            {/* <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" /> */}
+            <source srcSet={GirlWithCofeeLaptop} media="(min-width: 1280px)" />
             <img
               src={GirlWithCofeeMobile}
               alt="girl with cofee"
-              className="m-auto "
+              className="m-auto xl:m-0 xl:w-full"
             />
           </picture>
         </div>
       </div>
-      <div className="mt-[52px] md:flex md:justify-end lg:justify-between">
-        <div className="md:max-w-[294px] order-1">
+      <div className="mt-[52px] md:flex md:justify-end lg:justify-between xl:mt-[412px] xl:justify-start xl:gap-20  xl:relative">
+        <div className="md:max-w-[294px] order-1 xl:max-w-[400px]">
           <h2>Guarantees</h2>
 
           <img src={RedCircle} className="mb-6" alt="red circle decor" />
@@ -130,16 +140,24 @@ const Description = () => {
             Regardless of your country of residence, if your headphones are
             broken, we will send you new ones.
           </p>
+          <img
+            src={LongWave}
+            className="hidden xl:block absolute -right-[87px] bottom-4"
+            alt=""
+          />
         </div>
-        <div className="relative md:absolute md:left-0 md:h-[442px] bg-[#1D1D1D] lg:static ">
-          {/* <div className="relative "> */}
-          <picture className="block md:w-[354px] ">
+        <div className="relative md:absolute md:left-0 md:h-[442px] bg-[#1D1D1D] lg:static xl:relative xl:-left-[100px]">
+          <picture className="block md:w-[354px] xl:w-full">
+            <source
+              srcSet={WhiteHeadphonesLaptop}
+              media="(min-width: 1280px)"
+            />
             <source srcSet={WhiteHeadphonesTablet} media="(min-width: 768px)" />
-            {/* <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" /> */}
+
             <img
               src={WhiteHeadphonesPhone}
               alt="white headphones"
-              className="m-auto"
+              className="m-auto xl:m-0 "
             />
           </picture>
         </div>
