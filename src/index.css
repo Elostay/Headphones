@@ -205,3 +205,25 @@ section {
 		padding-right: 5 rem;
 	}
 }
+
+.custom-calc-left {
+	left: calc(-50vw + 50%);
+}
+
+.custom-calc-right {
+	right: calc(-50vw + 50%);
+}
+.custom-calc-right-1440 {
+	@media (min-width: 1440px) {
+		right: calc(-50vw + 51%);
+	}
+}
+
+/*
+ <img
+            src={LongWave}
+            className="hidden xl:block absolute right-0 bottom-4 custom-calc-right"
+            alt=""
+            // style={{ right: "calc(-50vw + 50%)" }}
+          />
+*/

@@ -9,6 +9,7 @@ import WhiteHeadphonesTablet from "assets/images/headphones_white/headphones_whi
 import WhiteHeadphonesLaptop from "assets/images/headphones_white/headphones_white-laptop.png";
 import MenPhone from "assets/images/men/men-phone.png";
 import MenTablet from "assets/images/men/men-tablet.png";
+import MenLaptop from "assets/images/men/men-laptop.png";
 import ManPhone from "assets/images/man/man-phone.png";
 import ManTablet from "assets/images/man/man-tablet.png";
 import GirlWithCofeeMobile from "assets/images/girl_cofee/girl_cofee-phone.png";
@@ -39,7 +40,7 @@ const Description = () => {
             soft gel lining that fits well to the head.
           </p>
         </div>
-        <picture className="md:mr-[60px] lg:mr-[150px] shrink-0  xl:absolute top-0 -left-[100px] xl:mr-0 ">
+        <picture className="md:mr-[60px] lg:mr-[150px] shrink-0  xl:absolute top-0 left-[100px] xl:mr-0 ">
           <source srcSet={GirlHeadphonesLaptop} media="(min-width: 1280px)" />
           <source srcSet={GirlHeadphonesTablet} media="(min-width: 768px)" />
 
@@ -69,14 +70,15 @@ const Description = () => {
       </ul>
 
       <h2 className="md:text-right">The luxury of silence</h2>
-      <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen max-w-none">
-        <picture className="block w-full xl:w-[1440px] xl:h-[524px]">
+
+      <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen xl:ml-[-50.4vw]">
+        <picture className="block w-full">
           <source srcSet={SunsetTablet} media="(min-width: 768px)" />
           <source srcSet={SunsetLaptop} media="(min-width: 1280px)" />
           <img
             src={SunsetPhone}
             alt="headphones and sunset"
-            className="mb-8 m-auto block md:w-full"
+            className="mb-8 w-full h-auto"
           />
         </picture>
       </div>
@@ -114,8 +116,8 @@ const Description = () => {
         </div>
         <div className="relative md:absolute md:right-0 lg:static xl:absolute">
           <picture className="block md:w-[354px] lg:w-[294px] xl:w-[700px] xl:h-[586px]">
-            <source srcSet={GirlWithCofeeTablet} media="(min-width: 768px)" />
             <source srcSet={GirlWithCofeeLaptop} media="(min-width: 1280px)" />
+            <source srcSet={GirlWithCofeeTablet} media="(min-width: 768px)" />
             <img
               src={GirlWithCofeeMobile}
               alt="girl with cofee"
@@ -124,7 +126,7 @@ const Description = () => {
           </picture>
         </div>
       </div>
-      <div className="mt-[52px] md:flex md:justify-end lg:justify-between xl:mt-[412px] xl:justify-start xl:gap-20  xl:relative">
+      <div className="mt-[52px] md:flex md:justify-end lg:justify-between xl:mt-[412px] xl:justify-start xl:gap-20  xl:relative ">
         <div className="md:max-w-[294px] order-1 xl:max-w-[400px]">
           <h2>Guarantees</h2>
 
@@ -142,7 +144,7 @@ const Description = () => {
           </p>
           <img
             src={LongWave}
-            className="hidden xl:block absolute -right-[87px] bottom-4"
+            className="hidden xl:block absolute bottom-4 custom-calc-right-1440"
             alt=""
           />
         </div>
@@ -193,14 +195,14 @@ const Description = () => {
             audio recording, his bewilderment turned to disappointment.
           </p>
         </div>
-        <div className="relative md:absolute md:-right-[63px] md:h-[524px] md:top-[100px]">
-          <picture className="block md:w-[354px] ">
+        <div className="relative md:absolute md:-right-[63px] md:h-[524px] md:top-[100px] xl:h-[638px] ">
+          <picture className="block md:w-[354px] xl:w-[700px] xl:h-full">
+            <source srcSet={MenLaptop} media="(min-width: 1440px)" />
             <source srcSet={MenTablet} media="(min-width: 768px)" />
-            {/* <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" /> */}
             <img
               src={MenPhone}
               alt="Men work"
-              className="mb-8 m-auto order-2"
+              className="mb-8 m-auto order-2 xl:m-0"
             />
           </picture>
         </div>
@@ -218,14 +220,14 @@ const Description = () => {
           </p>
         </div>
       </div>
-      <div className="md:flex  justify-between md:h-[355px] items-center">
+      <div className="md:flex  justify-between md:h-[355px] items-center xl:justify-center xl:gap-72">
         <picture className="block md:w-[294px] ">
           <source srcSet={ManTablet} media="(min-width: 768px)" />
-          {/* <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" /> */}
+
           <img src={ManPhone} alt="creator" className="mb-8 m-auto md:m-0" />
         </picture>
 
-        <div className="md:max-w-[294px]">
+        <div className="md:max-w-[294px] xl:max-w-[382px]">
           <svg
             className="mb-6 md:mb-[52px]"
             width="34"
@@ -243,11 +245,13 @@ const Description = () => {
               fill="#DF3D3A"
             />
           </svg>
-          <p className="mb-4 font-semibold text-xl ">
+          <p className="mb-4 font-semibold text-xl xl:text-3xl">
             Never stop dreaming. Always dream of the best, and think about how
             to achieve it.
           </p>
-          <p className="text-[#FFFFFF66]">Amar Bose is a company founder </p>
+          <p className="text-[#FFFFFF66] xl:text-base">
+            Amar Bose is a company founder{" "}
+          </p>
         </div>
       </div>
     </section>
