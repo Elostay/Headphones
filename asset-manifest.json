@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/Headphones/static/css/main.17d48edf.css",
-    "main.js": "/Headphones/static/js/main.1ba26b03.js",
+    "main.css": "/Headphones/static/css/main.1f71346f.css",
+    "main.js": "/Headphones/static/js/main.da548009.js",
+    "static/media/third_video-laptop.png": "/Headphones/static/media/third_video-laptop.5fa312be725ebad02650.png",
     "static/media/sunset-laptop.png": "/Headphones/static/media/sunset-laptop.7f2ef0a1c18e578aaeff.png",
+    "static/media/first_video-laptop.png": "/Headphones/static/media/first_video-laptop.e64c563452713706018d.png",
+    "static/media/third_video-tablet.png": "/Headphones/static/media/third_video-tablet.41acaa304cac6b07be97.png",
     "static/media/girl_cofee-laptop.png": "/Headphones/static/media/girl_cofee-laptop.3f58b67a988ef63208fe.png",
     "static/media/girl_headphonesl-laptop.png": "/Headphones/static/media/girl_headphonesl-laptop.85a4a6f755c4b49f628e.png",
+    "static/media/second_video-laptop.png": "/Headphones/static/media/second_video-laptop.c40a27fdaf82a4db5e79.png",
+    "static/media/first_video-tablet.png": "/Headphones/static/media/first_video-tablet.cacc50d981fc817899dd.png",
+    "static/media/men-laptop.png": "/Headphones/static/media/men-laptop.6aae8cf977d7d47b5eea.png",
     "static/media/girl_headphonesl-tablet.png": "/Headphones/static/media/girl_headphonesl-tablet.b8d48708913e331cf349.png",
+    "static/media/second_video-tablet.png": "/Headphones/static/media/second_video-tablet.658307f8f1a6f4892032.png",
     "static/media/sunset-tablet.png": "/Headphones/static/media/sunset-tablet.871a38998b2d18efd7c7.png",
     "static/media/girl_cofee-tablet.png": "/Headphones/static/media/girl_cofee-tablet.044210386d465ebec1d0.png",
     "static/media/Roboto-Regular.ttf": "/Headphones/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/men-tablet.png": "/Headphones/static/media/men-tablet.aeae48d4532365192050.png",
     "static/media/girl_headphonesl-phone.png": "/Headphones/static/media/girl_headphonesl-phone.6025aa6b10004bb78a42.png",
     "static/media/RobotoCondensed-Regular.ttf": "/Headphones/static/media/RobotoCondensed-Regular.72f32aff4124468d86a4.ttf",
-    "static/media/third_video.png": "/Headphones/static/media/third_video.169781ef00833584a3c5.png",
+    "static/media/third_video-phone.png": "/Headphones/static/media/third_video-phone.169781ef00833584a3c5.png",
     "static/media/girl_cofee-phone.png": "/Headphones/static/media/girl_cofee-phone.5fafc78c8efc42857dff.png",
     "static/media/headphones_white-laptop.png": "/Headphones/static/media/headphones_white-laptop.4ea7a13a92e161d24400.png",
     "static/media/sunset-phone.png": "/Headphones/static/media/sunset-phone.38ba76b306178b3aa771.png",
-    "static/media/first_video.png": "/Headphones/static/media/first_video.b42aa3f7a441dcd01b5a.png",
+    "static/media/first_video-phone.png": "/Headphones/static/media/first_video-phone.b42aa3f7a441dcd01b5a.png",
     "static/media/woman_work-phone.png": "/Headphones/static/media/woman_work-phone.a7c5503c05899f8a8487.png",
     "static/media/man-tablet.png": "/Headphones/static/media/man-tablet.2a2f55e569ea8ae8a1e4.png",
     "static/media/Gilroy-Regular.ttf": "/Headphones/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
@@ -24,7 +31,7 @@
     "static/media/man-phone.png": "/Headphones/static/media/man-phone.eabc86d277350d586246.png",
     "static/media/hero_headphones-laptop.jpg": "/Headphones/static/media/hero_headphones-laptop.b19c039b7a807249bf7b.jpg",
     "static/media/men-phone.png": "/Headphones/static/media/men-phone.f178342fffde89b05226.png",
-    "static/media/second_video.png": "/Headphones/static/media/second_video.34e9f9e68bc1e57a3ad8.png",
+    "static/media/second_video-phone.png": "/Headphones/static/media/second_video-phone.34e9f9e68bc1e57a3ad8.png",
     "static/media/headphones_white-tablet.png": "/Headphones/static/media/headphones_white-tablet.37770ea0497295822f2f.png",
     "static/media/hero_headphones-tablet.jpg": "/Headphones/static/media/hero_headphones-tablet.e36361f7f082a1b3db38.jpg",
     "static/media/headphones_white-phone.jpg": "/Headphones/static/media/headphones_white-phone.c5fc584466fd59411abc.jpg",
@@ -32,11 +39,11 @@
     "static/media/choose_black_headphones-phone.jpg": "/Headphones/static/media/choose_black_headphones-phone.a4d39c8e1cfc17f55922.jpg",
     "static/media/choose_gray_headphones-phone.jpg": "/Headphones/static/media/choose_gray_headphones-phone.492e54de32075615cca0.jpg",
     "index.html": "/Headphones/index.html",
-    "main.17d48edf.css.map": "/Headphones/static/css/main.17d48edf.css.map",
-    "main.1ba26b03.js.map": "/Headphones/static/js/main.1ba26b03.js.map"
+    "main.1f71346f.css.map": "/Headphones/static/css/main.1f71346f.css.map",
+    "main.da548009.js.map": "/Headphones/static/js/main.da548009.js.map"
   },
   "entrypoints": [
-    "static/css/main.17d48edf.css",
-    "static/js/main.1ba26b03.js"
+    "static/css/main.1f71346f.css",
+    "static/js/main.da548009.js"
   ]
 }
