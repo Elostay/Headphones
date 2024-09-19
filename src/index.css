@@ -165,6 +165,10 @@ section {
 	vertical-align: middle;
 	transition: background-color 0.2s ease;
 	background-color: #191919;
+	@media (min-width: 1440px) {
+		height: 30px;
+		width: 30px;
+	}
 }
 
 .custom-checkbox .checkmark::after {
@@ -213,17 +217,14 @@ section {
 .custom-calc-right {
 	right: calc(-50vw + 50%);
 }
+
 .custom-calc-right-1440 {
 	@media (min-width: 1440px) {
 		right: calc(-50vw + 51%);
 	}
 }
-
-/*
- <img
-            src={LongWave}
-            className="hidden xl:block absolute right-0 bottom-4 custom-calc-right"
-            alt=""
-            // style={{ right: "calc(-50vw + 50%)" }}
-          />
-*/
+.custom-calc-left-1440 {
+	@media (min-width: 1440px) {
+		right: calc(-50vw + 51%);
+	}
+}

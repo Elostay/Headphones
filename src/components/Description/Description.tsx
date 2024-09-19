@@ -22,8 +22,8 @@ const Description = () => {
   return (
     <section>
       <div className="md:flex md:justify-between xl:relative">
-        <div className=" md:order-1 md:w-[294px] lg:w-[464px] xl:ml-[800px] ">
-          <h2 id="characteristics" className=" md:w-[294px] lg:w-[464px] m-0">
+        <div className=" md:order-1 md:w-[294px] xl:w-[510px]  xl:ml-[800px] ">
+          <h2 id="characteristics" className=" md:w-[294px]  m-0">
             Premium design and comfort
           </h2>
           <h3>11 levels of noise reduction</h3>
@@ -40,7 +40,7 @@ const Description = () => {
             soft gel lining that fits well to the head.
           </p>
         </div>
-        <picture className="md:mr-[60px] lg:mr-[150px] shrink-0  xl:absolute top-0 left-[100px] xl:mr-0 ">
+        <picture className="md:mr-[40px] lg:mr-[150px] shrink-0  xl:absolute top-0 left-[100px] xl:mr-0 ">
           <source srcSet={GirlHeadphonesLaptop} media="(min-width: 1280px)" />
           <source srcSet={GirlHeadphonesTablet} media="(min-width: 768px)" />
 
@@ -71,20 +71,20 @@ const Description = () => {
 
       <h2 className="md:text-right">The luxury of silence</h2>
 
-      <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen xl:ml-[-50.4vw]">
+      <div className="md:relative left-1/2 right-1/2 md:ml-[-52vw] md:mr-[-52vw] lg:ml-[-51vw] lg:mr-[-51vw] md:w-screen ">
         <picture className="block w-full">
           <source srcSet={SunsetTablet} media="(min-width: 768px)" />
           <source srcSet={SunsetLaptop} media="(min-width: 1280px)" />
           <img
             src={SunsetPhone}
             alt="headphones and sunset"
-            className="mb-8 w-full h-auto"
+            className="mb-8 m-auto w-[280px] h-[293px] md:w-full md:h-auto"
           />
         </picture>
       </div>
 
-      <div className="md:flex justify-between xl:mt-[60px]">
-        <div className="md:max-w-[294px] xl:max-w-[510px]">
+      <div className="md:flex justify-between xl:mt-[60px] gap-[60px] xl:gap-[40px]">
+        <div className="md:w-[294px] xl:w-[510px]">
           <h3>Maximum enjoyment</h3>
           <p className="mb-[42px]">
             In order to create a comfortable atmosphere - raise the level by
@@ -93,7 +93,7 @@ const Description = () => {
             button.
           </p>
         </div>
-        <div className="md:max-w-[294px] xl:max-w-[510px]">
+        <div className="md:w-[294px] xl:w-[510px]">
           <h3>Crystal sound</h3>
           <p>
             The speaker system and brand name active equalizer are able to
@@ -195,7 +195,7 @@ const Description = () => {
             audio recording, his bewilderment turned to disappointment.
           </p>
         </div>
-        <div className="relative md:absolute md:-right-[63px] md:h-[524px] md:top-[100px] xl:h-[638px] ">
+        <div className="relative md:absolute right-0 md:h-[524px] md:top-[100px] xl:h-[638px] ">
           <picture className="block md:w-[354px] xl:w-[700px] xl:h-full">
             <source srcSet={MenLaptop} media="(min-width: 1440px)" />
             <source srcSet={MenTablet} media="(min-width: 768px)" />

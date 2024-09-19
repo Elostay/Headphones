@@ -28,7 +28,7 @@ const Hero = () => {
             Order
           </button>
         </div>
-        <div className=" md:absolute md:top-0 md:-right-[64px] xl:-right-[287px]">
+        <div className=" md:absolute md:top-0 md:-right-[6%] xl:-right-[32%]">
           <picture>
             <source srcSet={HeadphonesTablet} media="(min-width: 768px)" />
             <source srcSet={HeadphonesLaptop} media="(min-width: 1280px)" />
